@@ -68,12 +68,35 @@ python3 resolucion_primer_orden.py
 
 ---
 
-## 📑 Sustentación recomendada
+## 0) Recordatorio teórico en 5 líneas (explicado)
 
-* Explicar la diferencia entre **proposicional** y **primer orden**.
-* Mostrar el flujo: *CNF → añadir negación de conclusión → resolución → cláusula vacía*.
-* Resaltar el papel de la **unificación** en la segunda etapa.
-* Señalar limitaciones: las fórmulas deben estar en CNF de antemano.
+1. **Resolución por refutación**
+
+   * Para probar que KB ⊨ α, se añade ¬α a la base y se intenta derivar la cláusula vacía (□).
+   * Si llegas a contradicción, α era correcta.
+   * Ejemplo: “Sócrates es mortal”.
+
+2. **CNF (Forma Normal Conjuntiva)**
+
+   * Conjunto de cláusulas (cada cláusula es un OR de literales).
+   * Toda la base es la conjunción (AND) de esas cláusulas.
+   * Resolución solo funciona si la KB está en CNF.
+
+3. **Paso de resolución**
+
+   * Dados dos cláusulas con literales complementarios (p y ¬p), el resolvente es la unión de ambas menos esos literales.
+   * Ejemplo: (p ∨ q) y (¬p ∨ r) ⇒ (q ∨ r).
+
+4. **Primer Orden vs. Proposicional**
+
+   * En proposicional, los literales deben coincidir exactamente (p vs. ¬p).
+   * En primer orden, puedes unificarlos aplicando sustituciones si predicados y aridades son compatibles.
+   * Ejemplo: Padre(x, Ana) y ¬Padre(Juan, y) unifican con {x=Juan, y=Ana}.
+
+5. **Éxito de la prueba**
+
+   * Si aparece la cláusula vacía (□), la refutación fue exitosa.
+   * Esto significa que KB ⊨ α: la conclusión se sigue lógicamente de la base.
 
 ---
 
@@ -85,4 +108,4 @@ python3 resolucion_primer_orden.py
 
 ---
 
-✍️ **Autor:** Proyecto académico desarrollado en Python para la clase de Introduccion a IA
+✍️ **Autor:** Proyecto académico desarrollado en Python para la clase de Introduccion a IA.
