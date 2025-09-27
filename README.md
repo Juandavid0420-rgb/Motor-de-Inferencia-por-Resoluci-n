@@ -68,7 +68,7 @@ python3 resolucion_primer_orden.py
 
 ---
 
-## 0) Recordatorio teórico en 5 líneas (explicado)
+## 0) Recordatorio teórico (explicado)
 
 1. **Resolución por refutación**
 
