@@ -85,4 +85,4 @@ python3 resolucion_primer_orden.py
 
 ---
 
-✍️ **Autor:** Proyecto académico desarrollado en Python para la clase de Lógica y Algoritmos de Inferencia.
+✍️ **Autor:** Proyecto académico desarrollado en Python para la clase de Introduccion a IA
